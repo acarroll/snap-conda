@@ -1,4 +1,4 @@
-SNAP_PKG='esa-snap_sentinel_unix_8_0.sh'
+SNAP_PKG='esa-snap_sentinel_unix_9_0_0.sh'
 
 chmod 755 $PREFIX/snap-src/$SNAP_PKG
 
@@ -66,7 +66,7 @@ echo " copying snappy folder to site-packages to make it importable: cp -r $SNAP
 cp -r $SNAP_HOME/snap-python/snappy $PREFIX/lib/python${python_version}/site-packages &>> $PREFIX/.messages.txt
 
 echo "Setting execution permissions to gdal.jar" &>> $PREFIX/.messages.txt
-chmod +x $SNAP_HOME/auxdata/gdal/gdal-3-0-0/java/gdal.jar &>> $PREFIX/.messages.txt
+chmod +x $SNAP_HOME/auxdata/gdal/gdal-3-2-1/java/gdal.jar &>> $PREFIX/.messages.txt
 
 ## Jdk from package requirements
 #echo "Setting the default version of java to 1.7" &>> $PREFIX/.messages.txt
